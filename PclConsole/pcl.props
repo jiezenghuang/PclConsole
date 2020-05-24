@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(PCL_ROOT)\3rdParty\VTK\include\vtk-8.2;$(PCL_ROOT)\3rdParty\FLANN\include;$(PCL_ROOT)\3rdParty\Eigen\eigen3;$(PCL_ROOT)\3rdParty\Boost\include\boost-1_73;$(PCL_ROOT)\include\pcl-1.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;BOOST_USE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(PCL_ROOT)\3rdParty\VTK\lib;$(PCL_ROOT)\3rdParty\FLANN\lib;$(PCL_ROOT)\3rdParty\Boost\lib;$(PCL_ROOT)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pcl_common.lib;pcl_io.lib;pcl_features.lib;pcl_filters.lib;pcl_search.lib;pcl_kdtree.lib;pcl_registration.lib;pcl_segmentation.lib;pcl_sample_consensus.lib;pcl_visualization.lib;vtkCommonCore-8.2.lib;vtkCommonMath-8.2.lib;vtkCommonDataModel-8.2.lib;vtkRenderingCore-8.2.lib;libboost_fiber-vc142-mt-x64-1_73.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
